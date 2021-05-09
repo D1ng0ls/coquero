@@ -1,0 +1,114 @@
+/*SOMENTE FORMULÁRIO*/
+
+/*Formulário*/
+/*deixa o formulário centralizado no meio da tela*/
+.container_form {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(255,99,71);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+/*tira a borda do fieldset*/
+.container_form fieldset {
+	border: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+/*formata toda as caixas de entrada do formulário*/
+.container_form fieldset input{
+	width: 200px;
+	height: 25px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border: 1px solid;
+}
+/*deixa a parte de login centralizada no meio da tela*/
+.box {
+	width: 300px;
+	height: 300px;
+	background: white;
+	border-top: 20px solid rgb(0,139,139);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+/*tamanho da área do formulário de login*/
+.box1 {
+	padding-bottom: 40px;
+}
+/*tamanho da área do formulário da tela de cadastro */
+.box2 {
+	padding-bottom: 60px;
+}
+/*tamanho da área do formulário da tela de esqueci senha*/
+.box3 {
+	padding-bottom: 40px;
+}
+
+/*texto das caixas*/
+/*formata o texto de cadastro*/
+#registrar {
+	font-size: 16px;
+	width: 300px;
+	align-items: center;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+/*formata o texto de login e de esqueci senha*/
+#login {
+	font-size: 32px;
+	font-family: 'Courier Prime', monospace;
+	border-top: 2px solid black;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*botões*/
+/*formata todos os botões da página*/
+button {
+	font-weight: bold;
+	font-size: 14px;
+	width: 200px;
+	height: 50px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border: 1px solid black;
+}
+/*formata o link dos botões*/
+button a {
+	text-decoration: none;
+	color: black;
+}
+/*formata o botão de envio do formulário*/
+#btn {
+	font-weight: bold;
+	font-size: 14px;
+	width: 200px;
+	height: 50px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border: none;
+	background-color: rgb(0,139,139);
+}
+/*formata o botão de voltar ao início*/
+.btn_voltar {
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+/*custon+*/
+/*formata o body da página para o formulário centralizar*/
+body {
+	margin: 0px;

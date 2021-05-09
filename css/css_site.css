@@ -1,0 +1,306 @@
+/*TODAS AS PAGINAS*/
+
+/*cabeçalho*/
+/*borda e margem do cabeçalho*/
+.container_inicio header{
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color:green;
+	width: 100%
+	margin-bottom: auto;
+	background-color: rgb(240,255,240);
+}
+
+/*logo do cabeçalho*/
+/*imagem da logo*/
+.container_inicio header img{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+/*texto da logo*/
+.container_inicio header h1{
+	color: green;
+	font-family: Freestyle Script;
+	text-decoration: underline;
+	font-size: 24px;
+}
+
+/*login*/
+/*área de login*/
+.container_inicio header p{
+	float: right;
+	margin: 10px;
+}
+/*formatação do link que vai para o site de login*/
+.container_inicio header a{
+	text-decoration: none;
+	text-decoration-color: none;
+	color: black;
+}
+
+/*menu*/
+/*tira a margem e o preenchimento da lista*/
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color: rgb(220,220,220);
+    background-size: 100%;
+}
+/*tira a marcação da lista e deixa na horizontal*/
+#menu ul li {
+	display: inline;
+}
+/*formata o link do menu*/
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+/*coloca ícones no menu*/
+#menu ul li a img{
+    margin-right: 10px;
+}
+/*deixa uma barrinha preta embaixo do menu indicando o lugar me que você está*/
+#pag_atual{
+    border-bottom:3px solid black;
+}
+
+/*rodapé*/
+/*fundo, posição, margem, tamanho e borda do rodapé*/
+.container_contato{
+   	position: static;
+   	bottom: 0;
+   	width: 100%;
+   	background: rgb(28,28,28);
+   	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	margin-top: 50px;
+	clear: both;
+}
+/*preenchimento, margem e borda da lista*/
+.container_contato ul{
+    padding:0px;
+    margin:0px;
+    border: solid 2px black;
+    border-bottom-color: transparent;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+/*tira a marcação da lista e deixa na horizontal*/
+.container_contato ul li{
+	display: inline;
+}
+/*formata a fonte e margem do texto p*/
+.container_contato ul li p{
+	color: rgb(211,211,211);
+	margin: 10px;
+	font-family: Century Schoolbook;
+}
+/*imagem do coqueiro do rodapé*/
+.container_contato ul li img{
+	margin-right: 10px;
+	float: left;
+	height: 64px;
+	width: 64px;
+}
+
+/*custons+*/
+/*fundo do site*/
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*PAGINA INDEX*/
+
+/*informações da loja*/
+/*formata o espaçamento entre linhas e letras*/
+.container_info{
+	letter-spacing: normal;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+/*formata o texto p*/
+.container_info p{
+	font-size: 20px;
+	height: 500px;
+	width: 500px;
+}
+/*deixa a cor do link preta*/
+.container_info a{
+	text-decoration-color: black;
+	color: black;
+}
+
+/*custons+*/
+/*muda a cor do nome da empresa*/
+#nome{
+	color: green;
+	font-family: Freestyle Script;
+	font-size: 30px;
+	font-weight: 200;
+}
+/*tempo e tipo de animação do preço*/
+#preco{
+   	-webkit-animation: color-change 1s infinite;
+}
+/*animação do preço*/
+@-webkit-keyframes color-change {
+	0% {color: red; }
+    10% {color: orange; }
+    30% {color: yellow; }
+    50% {color: lime; }
+    70% {color: green; }
+    90% {color: blue; }
+    100% {color: purple;}
+}
+
+/*PACOTES*/
+
+/*pacotes de viagens*/
+/*formata a margem da tabela*/
+.container_tabelapacote {
+	margin-top: 50px;
+	margin-bottom: 10%;
+}
+/*formatação do texto h1 que fica em cima da tabela*/
+.container_tabelapacote h1{
+	text-decoration: underline;
+}
+/*formatação da célula da tabela*/
+.container_tabelapacote table tbody tr td{
+	border-left: solid 2px black;
+	border-right: solid 2px black;
+	text-align: left;
+	padding: 0px;
+	height: 50px;
+	width: 300px;
+}
+/*formatação do texto h1 que fica dentro da célula da tabela*/
+.container_tabelapacote table tbody tr td h1{
+    font-size: 32px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 8px 0 0;
+    white-space: pre-line;
+    margin-left: 15px;
+}
+/*formatação do texto p que fica dentro da célula da tabela*/
+.container_tabelapacote table tbody tr td p{
+    font-size: 24px;
+    line-height: 1.15;
+    margin: 8px 0 0;
+    white-space: pre-line;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+/*imagem dos hoteis do pacote*/
+.container_tabelaimg td img{
+	height: 150px;
+	width: 300px;
+	border-top-right-radius: 26px;
+	border-top-left-radius: 26px;
+	border-bottom: solid 2px black;
+}
+/*deixa a borda encima da imagem arredondada e preta*/
+.container_tabelaimg td{
+	padding: 0px;
+	margin: 0px;
+	border-top: solid 1px black;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+/*deixa a borda embaixo do preco reta e preta*/
+.container_tabelapreco td{
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+}
+/*formata o link da tabela*/
+.container_tabelapacote tbody tr td a{
+	text-decoration: none;
+	text-decoration-color: none;
+	color: black;
+}
+/*formata margem da caixa dos pacotes de viagens nacionais*/
+.container_brasil{
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+/*HOTEIS*/
+
+/*posicionamento e tamanho*/
+/*formata o tamanho da caixa que ficam os hoteis*/
+.container_texto {
+	overflow: auto;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-bottom: 10%;
+	top: 50px;
+}
+/*formata a posição e tamanho da caixa dos hoteis*/
+.hoteis {
+	position: relative;
+	left: 2%;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 80%;
+	width: 50%;
+}
+/*formata o texto h2*/
+.hoteis h2{
+	text-decoration: underline;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 32px;
+	margin-left: 25px;
+}
+/*formata o conteúdo da caixa hotel em seu total*/
+.hotel {
+	position: relative;
+	float: left;
+	left: 2%;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-bottom: 50px;
+}
+/*formata as imagens da caixa hotel*/
+.hotel img {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	width: 300px;
+	height: 150px;
+	float: left;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+/*formata o texto h3 da caixa hotel*/
+.hotel h3 {
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px; 
+}
+
+/*sobre os hoteis*/
+/*formata o texto, margem e tamanho da caixa*/
+.box {
+	font-family: 'Epilogue', sans-serif;
+	font-size: 20px;
+	border-left: 4px solid black;
+	margin-left: 310px;
+    padding-left: 10px;
+    width: 95%;
+    height: 150px;
+}
+/*formata o texto p da caixa*/
+.box p {
+	font-size: 16px;
+	font-family: "Raleway script=latin rev=1";
+	margin-top: 5px;
+}
